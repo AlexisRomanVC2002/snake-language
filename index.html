@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/styles.css" rel="stylesheet">
+    <title>SNAKE - ANALIZADOR</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <p class="title">ANALIZADOR - SNAKE</p>
+    </header>
+
+    <main class="main">
+
+        <article class="editor_salida">
+            <div id="editor">
+                <div class="numero_linea" id="numero_linea"></div>
+                <textarea class="entrada_codigo" spellcheck="false" id="entrada_codigo" wrap="off"></textarea>
+            </div>
+            <div id="salida"></div>
+        </article>
+
+        <button class="button" id="button_analizar">Analizar</button>
+
+        <section id="seccion_tabla">
+            <table id="tabla_tokens">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>LEXEMA</th>
+                        <th>TOKEN</th>
+                        <th>LINEA</th>
+                    </tr>
+                </thead>
+
+                <tbody></tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <script src="./index.js" type="module"></script>
+
+</body>
+
+</html>

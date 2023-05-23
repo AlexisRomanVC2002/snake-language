@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #444654;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main{
+    padding: 40px;
+}
+
+.header{
+    width: 100%;
+    padding: 20px;
+    background-color: #1c1c1c;
+    color: #fff;
+    text-align: center;
+}
+
+.title{
+    font-weight: bold;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.editor_salida{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+#editor, #salida{
+    width: 40%;
+    height: 400px;
+    background-color: #fff;
+}
+
+#editor{
+    width: 60%;
+    display: flex;
+}
+
+.button{
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+
+#button_analizar{
+    width: 20%;
+    align-self: center;
+    background-color: #5eba7d;
+    transition: ease all 0.3s;
+    color: #fff;
+}
+
+#button_analizar:hover{
+    background-color: #44865a;
+}
+
+/********************************************************************************/
+/*                      EDITOR DEL LENGUAJE                                     */
+/********************************************************************************/
+.entrada_codigo{
+    height: 100%;
+    width: 95%;
+    border: none;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    resize: none;
+    outline: none;
+    padding: 10px;
+    line-height: 20px;
+}
+
+.numero_linea {
+    width: 5%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    height: 100%;
+    font-family: monospace;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    overflow-y: hidden;
+  }
+
+/********************************************************************************/
+/*                      TABLA DE TOKENS                                         */
+/********************************************************************************/
+#tabla_tokens{
+    width: 100%;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    color: #fff;
+}
+
+th{
+    padding: 10px;
+    font-size: 20px;
+}
+
+td{
+    text-align: center;
+    border: 1px solid #fff;
+    border-spacing: 0;
+    padding: 10px;
+}
